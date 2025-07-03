@@ -120,3 +120,7 @@ footer {
     font-size: 1.5rem;
   }
 }
+
+nav a, a:visited, a:hover, a:active {
+  color: rgb(6, 22, 249);
+}
