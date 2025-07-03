@@ -125,7 +125,7 @@ nav a, a:visited, a:hover, a:active {
   color: rgb(6, 22, 249);
 }
 
-nav a.exp {
+.exp {
   color: blue;
   text-decoration: none;
   font-size: 1rem;
