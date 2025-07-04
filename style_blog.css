@@ -123,6 +123,7 @@ footer {
 
 nav a, a:visited, a:hover, a:active {
   color: rgb(6, 22, 249);
+  display: inline;
 }
 
 .exp {
