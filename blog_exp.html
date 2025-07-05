@@ -1,69 +1,86 @@
 <!DOCTYPE html>
-<html lang="English">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>My Blog</title>
-        <link rel="stylesheet" href="style_blogexp.css">
-    </head>
-    <body>
-        <header>
-            <h1><b>MY BLOG</b></h1>
-            <nav>
-                <a  class="exp"href="index.html" target="_self">Home</a>
-                <a class="exp" href="blog_exp.html" target="_self">Experience</a>
-                <a class="exp" href="#CONTACT">Contact</a>
-                <a class="exp" href="#ABOUT">About</a>
-            </nav>
-        </header>
-        <main>
-            <article>
-                <h1><ins>ACADEMIC ACHIEVEMENTS</ins></h1>
-                <ul style="list-style-type: disc;">
-                    <li>Matriculation(Class 10th)
-                        <ul style="list-style-type: square;">
-                            <li>Completed at PM SHRI Kendriya Vidyalaya</li>
-                            <li>Achieved 94%</li>
-                            <li>Subjects Taken
-                                <ul style="list-style-type: circle;">
-                                    <li>English</li>
-                                    <li>Hindi</li>
-                                    <li>Mathematics</li>
-                                    <li>Science</li>
-                                    <li>Social Studies</li>
-                                    <li>Artificial Intelligence</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>Inter(10+2)
-                        <ul style="list-style: square;">
-                            <li>Completed at PM SHRI Kendriya Vidyalaya</li>
-                            <li>Achieved 94%</li>
-                            <li>Subjects Taken
-                                <ul style="list-style-type: circle;">
-                                    <li>Physics</li>
-                                    <li>Chemistry</li>
-                                    <li>Mathematics</li>
-                                    <li>English</li>
-                                    <li>Computer Science</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </article>
-            <article>
-                <h1><ins>PROGRAMMING LANGUAGES LEARNT</ins></h1>
-                <ul style="list-style-type: disc;">
-                    <li>PYTHON</li>
-                    <li>HTML</li>
-                    <li>CSS(INCOMPLETELY)</li>
-                </ul>
-            </article>
-        </main>
-        <footer>
-            <p>&copy; 2025 My Blog</p>
-        </footer>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style_blogexp.css">
+</head>
+<body>
+  <header>
+    <h1><b>MY BLOG</b></h1>
+
+    <!-- Toggle Button -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog_exp.html">Experience</a></li>
+        <li><a href="#CONTACT">Contact</a></li>
+        <li><a href="#ABOUT">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1><ins>ACADEMIC ACHIEVEMENTS</ins></h1>
+      <ul>
+        <li>Matriculation(Class 10th)
+          <ul>
+            <li>Completed at PM SHRI Kendriya Vidyalaya</li>
+            <li>Achieved 94%</li>
+            <li>Subjects Taken
+              <ul>
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Mathematics</li>
+                <li>Science</li>
+                <li>Social Studies</li>
+                <li>Artificial Intelligence</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Inter(10+2)
+          <ul>
+            <li>Completed at PM SHRI Kendriya Vidyalaya</li>
+            <li>Achieved 94%</li>
+            <li>Subjects Taken
+              <ul>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>Mathematics</li>
+                <li>English</li>
+                <li>Computer Science</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+
+    <article>
+      <h1><ins>PROGRAMMING LANGUAGES LEARNT</ins></h1>
+      <ul>
+        <li>PYTHON</li>
+        <li>HTML</li>
+        <li>CSS(INCOMPLETELY)</li>
+      </ul>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Blog</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      document.querySelector('#navbar ul').classList.toggle('active');
+    }
+  </script>
+</body>
 </html>

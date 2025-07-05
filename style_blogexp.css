@@ -50,7 +50,6 @@ li {
   box-sizing: border-box;
 }
 
-/* Body settings */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -58,7 +57,6 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Header section */
 header {
   background: #222;
   color: #a020f0;
@@ -66,7 +64,17 @@ header {
   text-align: center;
 }
 
-/* Navigation styling */
+.menu-toggle {
+  display: none;
+  background: #444;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
 nav ul {
   display: flex;
   justify-content: center;
@@ -82,17 +90,6 @@ nav ul li a {
   font-size: 1rem;
 }
 
-/* Blog post section */
-.blog-post {
-  background: white;
-  border-radius: 10px;
-  padding: 1.2rem;
-  margin: 2rem auto;
-  max-width: 600px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-/* Footer */
 footer {
   text-align: center;
   font-size: 0.9rem;
@@ -100,45 +97,38 @@ footer {
   color: #555;
 }
 
-/* Media query for phones */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
   }
 
-  .blog-post {
-    margin: 1rem 1rem;
-    padding: 1rem;
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  nav ul.active {
+    display: flex;
   }
 
   nav ul li a {
-    font-size: 1.1rem;
-  }
-
-  h1, h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
 nav a, a:visited, a:hover, a:active {
   color: rgb(6, 22, 249);
-  display: inline;
   padding: 0;
-  margin-left:3rem ;
-  margin-right: 3rem;
+  margin: 0 1.5rem;
 }
 
-.exp {
-  color: blue;
-  text-decoration: none;
-  font-size: 1rem;
-}
-/*Hello*/
 article {
-    background: white;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 20px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }

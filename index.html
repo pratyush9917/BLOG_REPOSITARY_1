@@ -33,7 +33,7 @@
             <p>&copy; 2025 My Blog</p>
         </footer>
     </body>
-</html> -->
+</html> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,5 +68,53 @@
   <footer>
     © 2025 My Blog
   </footer>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Blog</title>
+  <link rel="stylesheet" href="style_blog.css">
+</head>
+<body>
+  <header>
+    <h1>MY BLOG</h1>
+    <!-- Toggle Button -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog_exp.html">Experience</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="blog-post">
+    <h2>My First Blog Post</h2>
+    <h3>Regarding Author</h3>
+    <p><small>Posted on July 2, 2025</small></p>
+    <p>
+      Born in 2007, currently a student looking for colleges.<br />
+      Completed my 10+2 from PM SHRI Kendriya Vidyalaya
+    </p>
+  </section>
+
+  <footer>
+    © 2025 My Blog
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      document.querySelector('#navbar ul').classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
